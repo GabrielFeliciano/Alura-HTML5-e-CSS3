@@ -1,46 +1,48 @@
 body {
     justify-items: center;
-    text-align: center;
     background-image: linear-gradient(90deg, #71FF9E, #71FFC1);
 }
 
-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-header section {
+section {
     width: 60vw;
-
-    display: flex;
-    flex-direction: column;
     
-    padding: 0.8em;
-    margin-top: 1em;
+    padding: 0.8em; 
+    margin: 1em;
 
     border: .1rem solid #8b000060;
     border-radius: 1rem;
     background-color: beige;
-    box-shadow: coral .2em .2em;
+    box-shadow: coral .1em .1em;
 }
 
-header section * {
+section * {
     margin: 0.5em;
 }
 
-header section div {
+ul * {
+    padding: 1rem;
+    font-size: 1.5rem;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+ul *:hover {
+    background-color: #74ff6f66;
+}
+
+section div {
     position: relative;
 }
 
-header section img[src*='banner'] {
+img[src*='banner'] {
     width: 90%;
     align-self: center;
     box-shadow: #00000070 0.2em 0.2em;
 }
 
-header section img[src*='tesoura'] {
+img[src*='tesoura'] {
     width: 10%;
 
     position: absolute;
@@ -48,16 +50,14 @@ header section img[src*='tesoura'] {
     left: -1%;
 }
 
-header section h1 {
-    border-bottom: .1rem solid darkred;
-    margin: 0px;
-    padding: .5em;
-    border-radius: .5rem;
-    background-color: #ff5db340;
+img[src*='beneficios'] {
+    width: 50%;
 }
 
-section > p.font-large {
-    background-color: #a52a2a70;
+article p.font-large {
+    background-color: #a52a2a40;
+    border-radius: .5em;
+    box-shadow: #a52a2a70 0px 0px 1rem;
     margin: 0.5em 0px 0.5em 0px
 }
 
@@ -73,4 +73,42 @@ section > p.font-large {
     font-family: mascot-mvb, sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+
+.text-align {
+    text-align: center;
+}
+
+.title {
+    border-bottom: .1rem solid darkred;
+    margin: 0px;
+    padding: .5em;
+    border-radius: .5rem;
+    background-color: #ff5db340;
+}
+
+.flex {
+    display: flex;
+}
+
+.centralize {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.space-evenly {
+    justify-content: space-evenly;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.column {
+    flex-direction: column;
 }
