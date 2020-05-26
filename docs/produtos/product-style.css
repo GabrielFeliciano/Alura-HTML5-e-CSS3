@@ -1,0 +1,80 @@
+header {
+    height: 15vh;
+    background-color: #BBBBBB;
+    padding: 20px 0;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.caixa,
+.caixa h1,
+.caixa img {
+    height: 100%;
+}
+
+#product-types h2 {
+    height: 15%;
+    font-style: italic;
+    font-size: 2em;
+}
+
+#product-types h3 {
+    width: 80%;
+    height: 20%;
+    font-weight: bold;
+}
+
+#product-types {
+    padding: 1em;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#product-types li {
+    margin: .6em .4em .6em .4em;
+
+    text-align: center;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+
+    width: 15rem;
+    height: 50vh;
+    border: .2em solid black;
+    border-radius: 1em;
+}
+
+#product-types li:hover {
+    background-color: darksalmon;
+}
+
+#product-types img {
+    width: 80%;
+}
