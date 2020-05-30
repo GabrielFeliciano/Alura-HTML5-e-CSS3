@@ -1,0 +1,26 @@
+@media only screen and (max-width: 435px) {
+    header .caixa h1 img {
+        display: none;
+    }
+
+    header nav ul li {
+        margin: 0;
+    }
+
+    header nav, header nav ul {
+        width: 100%;
+    }
+
+    header nav ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    nav a {
+        text-transform: uppercase;
+        color: #000000;
+        font-weight: bold;
+        font-size: .6rem;
+        text-decoration: none;
+    }
+}
