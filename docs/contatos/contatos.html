@@ -25,7 +25,7 @@
     </header>
 
     <main>
-        <form action="">
+        <form action="" class="formulario">
             <div class="form-grid">
                 <section class="credentials box-form">
                     <div class="nail nail-pos-50"></div>
@@ -33,9 +33,9 @@
                     <label for="name">Nome completo: </label>
                     <input type="text" id="name" pattern="\S*.{10,}" required>
                     <label for="email">Email: </label>
-                    <input type="text" id="email" pattern="\S*.+@.+" required>
+                    <input type="email" id="email" pattern="\S*.+@.+" required>
                     <label for="tel">Telefone: </label>
-                    <input type="text" id="tel" placeholder="" required 
+                    <input type="tel" id="tel" placeholder="" required 
                     pattern="^(^|\()?\s*(\d{2})\s*(\s|\))*(9?\d{4})(\s|-)?(\d{4})($|\n)">    
                 </section>
                 
@@ -43,37 +43,43 @@
                     <div class="nail nail-pos-50"></div>
 
                     <label for="messages">Fale conosco: </label>
-                    <textarea name="" id="" maxlength="2048"></textarea>
+                    <textarea name="" id="" maxlength="2048" required></textarea>
                 </section>
 
                 <section class="client-options box-form">
                     <div class="nail nail-pos-90 decorator"></div>
+                    <div class="nail nail-pos-50 decorator"></div>
                     <div class="nail nail-pos-10 decorator"></div>
 
                     <div class="option contact">
                         <p>Como prefere o nosso contato?</p>
                         <label for="radio-email">
-                            <input type="radio" name="contato" value="email" id="radio-email">Email
+                            <input type="radio" name="contato" value="email" id="radio-email" required>Email
                         </label>
                     
                         <label for="radio-telefone">
-                            <input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone
+                            <input type="radio" name="contato" value="telefone" id="radio-telefone" required>Telefone
                         </label>
                     
                         <label for="radio-whatsapp">
-                            <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">WhatsApp
+                            <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" required>WhatsApp
                         </label>    
                     </div>
 
                     <div class="option service">
                         <p>Qual horário prefere ser atendido?</p>
-                        <select>
+                        <select required>
+                            <option>Selecione uma opção</option>
                             <option>Manhã</option>
                             <option>Tarde</option>
                             <option>Noite</option>
                         </select>
                     </div>
+                </section>
 
+                <section class="email-option box-form">
+                    <div class="nail nail-pos-90 decorator"></div>
+                    <div class="nail nail-pos-10 decorator"></div>
 
                     <div class="option">
                         <label class="checkbox option">
@@ -81,12 +87,10 @@
                             Gostaria de receber nossas novidades por email?
                         </label>    
                     </div>
-                    
                 </section>
             </div>
             
-
-            <input type="submit">
+            <input type="submit" class="form-submit">
         </form>
     </main>
 

@@ -28,3 +28,9 @@
         display: none;
     }
 }
+
+@media screen and (max-width: 900px) {
+    .form-grid {
+        padding: 1rem 1.2rem;
+    }
+}
