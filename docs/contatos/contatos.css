@@ -1,53 +1,177 @@
-header {
-	background: #BBBBBB;
-	padding: 1rem 10%;
+main {
+    flex-grow: 1;
+
+    padding: .5rem 1rem;
+
+    background-color: #ffe2c6;
+    /* background-image: url("../img/logo.png");
+    background-position: top;
+    background-size: 5rem;
+    background-repeat: space; */
 }
 
-header .caixa {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+textarea:focus, input:focus {
+    box-shadow: .3rem .3rem .1rem #00000046;
 }
 
-header nav ul {
-    display: flex;
-    align-items: center;
+textarea, input {
+    background-color: #d7ffd7;
 }
 
-header nav ul li {
-    margin-right: 5vw;
+main .form-grid {
+    display: grid;
+    grid-template: auto auto / auto auto;
+    gap: .4rem;
+    border-radius: 1rem;
+
+    padding: 1rem 2rem;
 }
 
-header nav ul li:last-child {
-    margin: 0;
+.form-grid label {
+    width: 100%;
+
+    font-size: 1.3rem;
 }
 
-nav a {
+.box-form {
+    position: relative;
+
     padding: 1rem;
+    border-radius: 1rem;
+    border: .2rem solid goldenrod;
+    border-top: 2.5rem solid goldenrod;
 
-	text-transform: uppercase;
-	color: #000000;
-	font-weight: bold;
-	font-size: 2.5vw;
-	text-decoration: none;
+    background-color: #ffcfb4;
 }
 
-nav a:hover {
-	color: #C78C19;
-	text-decoration: underline;
+.box-form:hover {
+    box-shadow: .2rem .2rem .1rem #00000046;    
 }
 
-header img, footer img {
-    height: 10rem;
+.credentials {
+    grid-area: 1 / 1;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+
+    text-align: left;
 }
 
-footer {
+.credentials input {
+    width: 100%;
+
+    margin: .1rem 0 .5rem 0;
+    padding: .6rem 1.2rem ;
+}
+
+/* Show red borders when filled, but invalid */
+/* .credentials input:not(:placeholder-shown) {
+    border-color: hsl(0, 76%, 50%);;
+} */
+  
+/* Show green borders when valid */
+.credentials input:valid {
+    border-color: hsl(120, 76%, 50%);
+}
+
+.credentials input[type='submit'] {
+    width: 5rem;
+    height: 2rem;
+}
+
+.menssage {
+    display: flex;
+    flex-flow: column;
+
     text-align: center;
-
-	background: url("../img/bg.jpg");
-	padding: 40px 0;
 }
 
-footer p {
-    color: snow;
+.menssage textarea {
+    font-size: 20px;
+
+    flex-grow: 1;
+
+    padding: 1rem;
+    margin: 1rem;
+
+    color: goldenrod;
+
+    border: .1rem solid #00000066;
+
+    resize: vertical; 
+    max-height: 15rem;
 }
+
+.nail {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    background-color: grey;
+
+    position: absolute;
+    top: calc(-1.25rem - 1rem);
+
+    box-shadow: .2rem .1rem #00000044;
+}
+
+.nail-pos-50 {
+    left: calc(50% - 1rem);
+}
+
+.nail-pos-80 {
+    left: calc(80% - 1rem);
+}
+
+.nail-pos-20 {
+    left: calc(20% - 1rem);
+}
+
+.nail-pos-90 {
+    left: calc(90% - 1rem);
+}
+
+.nail-pos-10 {
+    left: calc(10% - 1rem);
+}
+
+.client-options {
+    grid-column: 1 / span 2;
+    grid-row: 2 / 2;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.client-options > .option {
+    padding: 1rem;
+}
+
+.client-options p {
+    font-size: 1.3rem;
+    padding: .5rem;
+}
+
+.contact {
+    display: flex;
+    flex-flow: column;
+}
+
+.options.contact {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.option.service {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.option.service select {
+    width: 60%;
+    padding: .5rem 1rem;
+}
+
+
+
