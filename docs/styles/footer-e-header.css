@@ -6,7 +6,7 @@
 
 header {
 	background: #BBBBBB;
-	padding: 1rem 10%;
+	padding: 1rem 5% 1rem 1%;
 }
 
 header .caixa {
@@ -15,13 +15,28 @@ header .caixa {
     justify-content: space-between;
 }
 
+header h1 {
+    display: flex;
+    align-items: center;
+
+    font-size: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+
+    /* border: .2rem dotted blanchedalmond;
+    border-radius: 2rem; */
+
+    margin-right: 3rem;
+}
+
 header nav ul {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 header nav ul li {
-    margin-right: 5vw;
+    margin-right: 2rem;
 }
 header nav ul li:last-child {
     margin: 0;
@@ -49,7 +64,7 @@ header img, footer img {
 footer {
     display: flex;
     align-items: center;
-    justify-content: center ;
+    justify-content: space-evenly;
 
     text-align: center;
 

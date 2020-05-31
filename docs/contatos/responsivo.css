@@ -1,5 +1,67 @@
-@media only screen and (max-width: 435px) {
-    header .caixa h1 img {
+@media screen and (max-width: 950px) {
+    header .caixa h1 {
+        display: flex;
+        align-items: center;
+    
+        font-size: 2rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-style: italic;
+    
+        /* border: .2rem dotted blanchedalmond;
+        border-radius: 2rem; */
+    
+        margin-right: 2rem;
+    }
+
+    header img, footer img {
+        height: 6rem;
+    }
+
+    /* .credentials {
+        grid-row: 1 / 1;
+        grid-column: 1 / span 2;
+    
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    
+        text-align: left;
+    }
+
+    .menssage {
+        grid-row: 1 / 1;
+        grid-column: 1 / span 2;
+    
+        display: flex;
+        flex-flow: column;
+    
+        text-align: center;
+    } */
+
+    .form-grid {
+        display: flex;
+        flex-flow: column wrap;
+    
+        padding: 1rem 4rem;
+    }
+
+    .box-form {
+        margin: .4rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .form-grid {
+        padding: 1rem 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 2rem;
+    }
+
+    header .caixa h1 {
         display: none;
     }
 
@@ -16,21 +78,17 @@
         justify-content: space-evenly;
     }
 
-    nav a {
-        text-transform: uppercase;
-        color: #000000;
-        font-weight: bold;
-        font-size: 3rem;
-        text-decoration: none;
+    header nav a {
+        font-size: 2rem;
     }
 
-    footer img {
+    footer h1 {
         display: none;
     }
 }
 
-@media screen and (max-width: 900px) {
-    .form-grid {
-        padding: 1rem 1.2rem;
+@media only screen and (max-width: 600px) {
+    header nav a {
+        font-size: 1.4rem;
     }
 }

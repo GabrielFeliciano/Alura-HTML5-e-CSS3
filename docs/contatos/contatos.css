@@ -4,6 +4,15 @@ main {
     padding: .5rem 1rem;
 
     background-color: #ffe2c6;
+    /* background-image: linear-gradient(
+        180deg,
+        transparent,
+        black
+    ); */
+
+    border: .8rem dashed tomato;
+    border-left-style: solid;
+    border-right-style: solid;
     /* background-image: url("../img/logo.png");
     background-position: top;
     background-size: 5rem;
@@ -121,6 +130,9 @@ textarea, input {
 }
 
 .menssage {
+    grid-row: 1 / 1;
+    grid-column: 2 / 2;
+
     display: flex;
     flex-flow: column;
 

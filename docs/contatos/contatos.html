@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
     <link rel="stylesheet" href="./contatos.css">
-    <link rel="stylesheet" href="footer-e-header.css">
+    <link rel="stylesheet" href="../styles/footer-e-header.css">
     <link rel="stylesheet" href="responsivo.css">
     <title>Contato - Barbearia Alura</title>
 </head>
 <body>
     <header>
         <div class="caixa">
-            <h1><img src="../img/logo.png"></h1>
+            <h1><img src="../img/logo.png">
+            Barbearia Alura
+            </h1>
 
             <nav>
                 <ul>
@@ -30,7 +32,7 @@
                 <section class="credentials box-form">
                     <div class="nail nail-pos-50"></div>
 
-                    <label for="name">Nome completo: </label>
+                    <label for="name">Nome completo (minimo de 10 caracteres): </label>
                     <input type="text" id="name" pattern="\S*.{10,}" required>
                     <label for="email">Email: </label>
                     <input type="email" id="email" pattern="\S*.+@.+" required>
@@ -69,7 +71,7 @@
                     <div class="option service">
                         <p>Qual horário prefere ser atendido?</p>
                         <select required>
-                            <option>Selecione uma opção</option>
+                            <option disabled>Selecione uma opção</option>
                             <option>Manhã</option>
                             <option>Tarde</option>
                             <option>Noite</option>
