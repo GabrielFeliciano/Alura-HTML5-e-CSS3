@@ -27,6 +27,22 @@ textarea, input {
     background-color: #d7ffd7;
 }
 
+textarea:hover, input:hover {
+    transition: 1s;
+    transform: scale(1.02);
+}
+
+select:hover {
+    transition: 1s;
+    transform: scale(1.1);
+}
+
+.option.contact label:hover, 
+.email-option.box-form label:hover {
+    transition: 1s;
+    color: grey
+}
+
 fieldset {
     display: inline;
 }
