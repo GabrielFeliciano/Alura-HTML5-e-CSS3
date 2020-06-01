@@ -27,6 +27,17 @@ textarea, input {
     background-color: #d7ffd7;
 }
 
+fieldset {
+    display: inline;
+}
+
+.formulario * {
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */      
+}
+
 .formulario {
     display: flex;
     flex-flow: column wrap;
@@ -65,9 +76,13 @@ textarea, input {
         #00000009 20px
     );
     background-repeat: repeat;
+
+    transition: .5s box-shadow;
 }
 
+
 .box-form:hover {
+    transition: .5s box-shadow;
     box-shadow: .2rem .2rem .1rem #00000046;    
 }
 
@@ -87,6 +102,10 @@ textarea, input {
     border-radius: 2rem;
 
     box-shadow: .5rem .5rem .2rem #00000033;
+
+    transition: 2s all;
+
+    cursor: pointer;
 }
 
 .form-submit:hover, .form-submit:active {
@@ -95,6 +114,10 @@ textarea, input {
     background-color: springgreen;
 
     box-shadow: .2rem .2rem .3rem #00000033;
+
+    transition: 2s all;
+
+    transform: scale(1.2);
 }
 
 .credentials {
@@ -102,7 +125,7 @@ textarea, input {
 
     display: flex;
     flex-flow: column;
-    justify-content: center;
+    justify-content: space-evenly;
 
     text-align: left;
 }
@@ -110,8 +133,8 @@ textarea, input {
 .credentials input {
     width: 100%;
 
-    margin: .1rem 0 .5rem 0;
-    padding: .6rem 1.2rem ;
+    margin: .4rem 0 .5rem 0;
+    padding: .6rem 1.2rem;
 }
 
 /* Show red borders when filled, but invalid */
@@ -152,7 +175,11 @@ textarea, input {
     border: .1rem solid #00000066;
 
     resize: vertical; 
-    max-height: 15rem;
+    max-height: 20rem;
+
+    transition: .3s height;
+
+    white-space: pre-line;
 }
 
 .nail {
@@ -216,15 +243,49 @@ textarea, input {
 
 .option.service {
     display: flex;
+}
+
+.option.service .option-choose {
+    display: flex;
     flex-flow: column wrap;
     align-items: center;
+    justify-content: center;
 
     text-align: center;
 }
 
-.option.service select {
+.option.service .option-choose select {
     width: auto;
     padding: .5rem 1rem;
+}
+
+.option.service .option-choose p {
+    padding: .5rem 1rem;
+}
+
+.option.service .date-service {
+    margin-left: .5rem;
+}
+
+.date-service {
+    border: .2rem dotted #ffdd1b;
+    border-radius: 1rem;
+}
+
+.date-service thead {
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+.date-service tbody {
+    background-color: burlywood;
+}
+
+.date-service td, .date-service th {
+    border: 1px solid #000000;
+    padding: .5rem 1rem;
+    white-space: nowrap;
 }
 
 .email-option {

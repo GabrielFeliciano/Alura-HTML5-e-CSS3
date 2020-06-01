@@ -49,12 +49,16 @@ header nav a {
 	color: #000000;
 	font-weight: bold;
 	font-size: 2.5vw;
-	text-decoration: none;
+    text-decoration: none;
+    
+    transition: .5s color, .3s text-decoration;
 }
 
 header nav a:hover {
 	color: #C78C19;
-	text-decoration: underline;
+    text-decoration: underline;
+    
+    transition: .5s color, .3s text-decoration;
 }
 
 header img, footer img {

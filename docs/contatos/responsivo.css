@@ -17,36 +17,25 @@
         height: 6rem;
     }
 
-    /* .credentials {
-        grid-row: 1 / 1;
-        grid-column: 1 / span 2;
-    
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-    
-        text-align: left;
-    }
-
-    .menssage {
-        grid-row: 1 / 1;
-        grid-column: 1 / span 2;
-    
-        display: flex;
-        flex-flow: column;
-    
-        text-align: center;
-    } */
-
     .form-grid {
         display: flex;
-        flex-flow: column wrap;
+        flex-flow: column wrap; 
     
         padding: 1rem 4rem;
     }
 
     .box-form {
+        display: flex;
+        flex-flow: column wrap; 
+    }
+
+    .box-form {
         margin: .4rem;
+    }
+
+    .menssage textarea {
+        height: 20rem;
+        max-height: 35rem;
     }
 }
 

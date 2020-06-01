@@ -33,19 +33,22 @@
                     <div class="nail nail-pos-50"></div>
 
                     <label for="name">Nome completo (minimo de 10 caracteres): </label>
-                    <input type="text" id="name" pattern="\S*.{10,}" required>
+                    <input type="text" id="name" pattern="\S*.{10,}" placeholder="⭐ Seu nome completo" required>
                     <label for="email">Email: </label>
-                    <input type="email" id="email" pattern="\S*.+@.+" required>
+                    <input type="email" id="email" pattern="\S*.+@.+" placeholder="📧 email@dominio.com" required>
                     <label for="tel">Telefone: </label>
-                    <input type="tel" id="tel" placeholder="" required 
-                    pattern="^(^|\()?\s*(\d{2})\s*(\s|\))*(9?\d{4})(\s|-)?(\d{4})($|\n)">    
+                    <input type="tel" id="tel" placeholder="📱 (XX) XXXXX-XXXX" 
+                    pattern="^(^|\()?\s*(\d{2})\s*(\s|\))*(9?\d{4})(\s|-)?(\d{4})($|\n)" required>    
                 </section>
                 
                 <section class="menssage box-form">
                     <div class="nail nail-pos-50"></div>
 
                     <label for="messages">Fale conosco: </label>
-                    <textarea name="" id="" maxlength="2048" required></textarea>
+                    <textarea name="" id="" maxlength="1024" placeholder=
+                    "Sua mensagem 💬 
+                    (Máximo de 1024 caracteres)" 
+                    required></textarea>
                 </section>
 
                 <section class="client-options box-form">
@@ -64,18 +67,45 @@
                         </label>
                     
                         <label for="radio-whatsapp">
-                            <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" required>WhatsApp
+                            <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" required checked>WhatsApp
                         </label>    
                     </div>
 
                     <div class="option service">
-                        <p>Qual horário prefere ser atendido?</p>
-                        <select required>
-                            <option disabled>Selecione uma opção</option>
-                            <option>Manhã</option>
-                            <option>Tarde</option>
-                            <option>Noite</option>
-                        </select>
+                        <div class="option-choose">
+                            <p>Qual horário prefere ser atendido?</p>
+                            <select required>
+                                <option disabled>Selecione uma opção</option>
+                                <option>Manhã</option>
+                                <option>Tarde</option>
+                                <option>Noite</option>
+                            </select>    
+                        </div>
+                        
+                        <div class="date-service">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Dia</th>
+                                        <th>Horário</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Segunda</td>
+                                        <td>8h ~ 20h</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Quarta</td>
+                                        <td>8h ~ 20h</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sexta</td>
+                                        <td>8h ~ 20h</td>
+                                    </tr>
+                                </tbody>
+                            </table>    
+                        </div>
                     </div>
                 </section>
 
